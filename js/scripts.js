@@ -1,8 +1,14 @@
-var add = function(number1, number2) {
-	return number1 + number2;
-};
+$(document).ready(function() {
+	$('#blanks form').submit(function(event) {
+		var number1Input = $("input#number1").val();
+		var number2Input = $("input#number2").val();
 
-var number1 = parseInt(prompt("Enter a number:"));
-var number2 = parseInt(prompt("Enter another number:"));
 
-alert("The sum of your two numbers is" + " " + add(number1, number2) + ".");
+		$('#number1').append(number1Input);
+		$('#number2').append(number2Input);
+
+		$('.result').show();
+
+		event.preventDefault();
+	});
+});
