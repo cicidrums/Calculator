@@ -1,14 +1,16 @@
 $(document).ready(function() {
-	$('#blanks form').submit(function(event) {
-		var number1Input = $("input#number1").val();
-		var number2Input = $("input#number2").val();
 
-
-		$('#number1').append(number1Input);
-		$('#number2').append(number2Input);
-
-		$('.result').show();
-
+	$("form#calc").submit(function(event) {
 		event.preventDefault();
+
+		var number1Input = $("#number1").val();
+		var number2Input = $("#number2").val();
+
+		$("span.number1").append(number1Input+"cc");
+		$("span.number2").append(number2Input);
+
+		$(".result").show();
+
+
 	});
 });
