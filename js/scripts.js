@@ -7,15 +7,16 @@ $(document).ready(function() {
 	$("form#calc").submit(function(event) {
 		event.preventDefault();
 
-		var result = add(number1, number2);
 		var number1Input = parseInt($("#number1").val());
 		var number2Input = parseInt($("#number2").val());
+    var result = number1Input+number2Input;
 
-		$("span.number1").append(number1Input);
-		$("span.number2").append(number2Input);
+    console.log(number1Input);
+    console.log(number2Input);
 
-		$(".result").show();
+		$("span.sum").append(result);
 
+    $(".result").show();
 
 	});
 });
