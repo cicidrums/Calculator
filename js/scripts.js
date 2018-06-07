@@ -47,10 +47,10 @@ $(document).ready(function() {
 
     if (num1 === num2 && num2 === num3 && num1 === num3) {
       var tri = "Equilateral.";
-    } else if (num1 === num2 || num2 === num3 || num1 === num3) {
-      var tri = "Isosceles.";
     } else if (sum1 <= num3 || sum2 <= num1 || sum3 <= num2) {
       var tri = "This is NOT a triangle yo.";
+    } else if (num1 === num2 || num2 === num3 || num1 === num3) {
+      var tri = "Isosceles.";
     } else if (num1 !=num2 && num1 !=num3 && num2 !=num3) {
       var tri = "Scalene.";
     }
