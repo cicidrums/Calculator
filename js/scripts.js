@@ -30,9 +30,7 @@ $(document).ready(function() {
       var result = multiply(number1, number2);
     }
 
-    $("span.result").empty();
-		$("span.result").append(result);
-
+		$("span.result").text(result);
     $(".result").show();
 
 	});
