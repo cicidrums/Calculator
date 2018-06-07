@@ -10,7 +10,11 @@ h5 {
   display: none;
 }
 
+.result2 {
+  display: none;
+}
+
 .radio label {
   margin-right: 50px;
-  font-weight: bold; 
+  font-weight: bold;
 }
