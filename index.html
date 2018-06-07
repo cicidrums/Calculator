@@ -5,30 +5,45 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>BUSINESS LOGIC</title>
+    <title>Math Magic</title>
   </head>
   <body>
     <h1>Let's calculate!</h1>
     <div class="container">
-      <h2>Addition:</h2>
-        <div>
-          <form id="calc">
-            <div class="form-group">
-              <label for="number1">A number</label>
-              <input id="number1" class="form-control" type="text">
-            </div>
-            <h5>+</h5>
-            <div class="form-group">
-              <label for="number2">Another number</label>
-              <input id="number2" class="form-control" type="text">
-            </div>
-            <button type="submit" class="btn btn-default">Add</button>
-          </form>
-        </div>
+      <div>
+        <form id="calc">
+          <div class="form-group">
+            <label for="number1">A number</label>
+            <input id="number1" class="form-control" type="text">
+            <br/>
+            <label for="number2">Another number</label>
+            <input id="number2" class="form-control" type="text">
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="operator" value="add">
+              Add it!
+            </label>
+            <label>
+              <input type="radio" name="operator" value="subtract">
+              Subtract it!
+            </label>
+            <label>
+              <input type="radio" name="operator" value="divide">
+              Divide it!
+            </label>
+            <label>
+              <input type="radio" name="operator" value="multiply">
+              Multiply it!
+            </label>
+          </div>
+          <button type="submit" class="btn btn-warning btn-lg">Calculate it!</button>
+        </form>
+      </div>
 
       <hr/>
       <div class="result">
-      <p>The sum is: <span class="sum"></span></p>
+      <h2><strong>The result is: <span class="result"></span></strong></h2>
       </div>
     </div>
 
